@@ -1,0 +1,162 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header
+		&__carousel
+			&--item
+				min-height: 60vh
+	.advantages
+		&--title
+			text-align: center
+	.video
+		&--title
+			text-align: center
+	.clothes
+		&--title
+			text-align: center
+		&--wrapper
+			position: relative
+			padding-top: 40px
+			.owl-nav
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				position: absolute
+				top: -10px
+				left: 0
+				img
+					&:hover
+						opacity: 0.7
+				.owl-prev
+					padding-right: 10px
+					margin-right: 10px
+					border-right: 1px solid rgba($dark, .3)
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.telegram
+		&--wrapper
+			gap: 20px
+		&--text
+			text-align: center
+		.col-md-6
+			&:first-child
+				padding-left: 15px
+			&:last-child
+				padding-right: 15px
+	.footer
+		&--social
+			margin-bottom: 20px
+		&--menu
+			text-align: right
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header
+		&__carousel
+			&--item
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					background: rgba(0,0,0,.3)
+					z-index: 1
+		&__wrapper
+			z-index: 2
+			color: $white
+		&__text
+			.old
+				color: $white
+		&--top
+			&__wrapper
+				justify-content: space-between
+	.advantages
+		&--wrapper
+			&__item
+				&:nth-child(2n)
+					.caption
+						right: 10%
+				&--overlay 
+					.caption
+						left: 10%
+						.title
+							font-size: 30px
+						.text
+							font-size: 16px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.header
+		&__carousel
+			&--item
+				background-position: left
+		&__wrapper
+			left: 0
+			right: 0
+			margin-left: 15px
+			margin-right: 15px
+			text-align: center
+		&__title 
+			font-size: 30px
+			margin-bottom: 10px
+		&__text
+			font-size: 26px
+	.advantages
+		&--wrapper
+			&__item
+				&--overlay 
+					.caption 
+						.title
+							font-size: 20px
+						.text
+							font-size: 14px
+
+@media only screen and (max-width : 460px)
+	.header
+		&--top
+			&__wrapper
+				.phone
+					display: none
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.h2
+		font-size: 30px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
