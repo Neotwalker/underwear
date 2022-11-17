@@ -8,6 +8,27 @@ $(function() {
     }, 900);
 	});
 
+	function handler(event) {
+		let hash = typeof event === 'string' ? event : event.target.hash;
+		if (!hash){
+			return
+		}
+
+		let tag = $(hash);
+
+		if (tag.length) {
+			let offset = tag.offset().top - 130;
+			$('html, body').stop().animate({ scrollTop: offset
+			}, 500);
+		}
+	}
+
+	$('#my-menu a, .footer--menu a').on("click", handler);
+	$(function() {
+		handler(location.hash);
+	});
+
+
 	let container = $(".menu");
 	let body = $(".menu--wrapper__external");
 	$(".hamburger").click(() => {
@@ -35,32 +56,6 @@ $(function() {
 			body.removeClass("overlay");
     }
   });
-	// $('#my-menu').mmenu({
-	// 	extensions: [ 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
-	// 	navbar: {
-	// 		title: '<img src="img/logo.svg" alt="ваше лого">'
-	// 	},
-	// 	offCanvas: {
-	// 		position: 'right'
-	// 	},
-	// 	onClick : {
-	// 		close          : true,
-	// 		preventDefault : false,
-	// 	},
-	// 	pageScroll : {
-	// 		scroll : true, // прокрутка к якорю
-	// 		update : true, //прокручивать, даже если пункт обозначен как активный
-	// 		scrollOffset : 300 // отступ от якоря, по умолчанию 0. У меня почему-то не заработал
-	// 	}
-	// });
-
-	// let api = $('#my-menu').data('mmenu');
-	// api.bind('opened', function(){
-	// 	$('.hamburger').addClass('is-active');
-	// }).bind('closed', function(){
-	// 	$('.hamburger').removeClass('is-active');
-	// });
-
 	$('.header__carousel').owlCarousel({
 		loop: true,
 		autoplay : true,

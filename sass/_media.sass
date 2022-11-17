@@ -93,7 +93,9 @@
 							font-size: 30px
 						.text
 							font-size: 16px
-
+	.menu
+		&.menu--open
+			width: 80%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -115,12 +117,17 @@
 	.advantages
 		&--wrapper
 			&__item
-				&--overlay 
+				:nth-child(2n) 
+					.caption
+						right: 0
+				&--overlay
 					.caption 
+						padding: 0 0 0 10px
+						left: 0
 						.title
-							font-size: 20px
+							font-size: 16px
 						.text
-							font-size: 14px
+							font-size: 12px
 
 @media only screen and (max-width : 460px)
 	.header

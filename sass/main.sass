@@ -41,7 +41,6 @@ html, body
 	height: 100%
 
 .menu
-	&--burger
 	position: fixed
 	right: -100%
 	width: 30%
@@ -344,6 +343,7 @@ img
 			display: block
 			transition: all .3s ease
 			margin-bottom: 40px
+			max-height: 400px
 			&:last-child
 				margin-bottom: 0
 			img
@@ -404,8 +404,8 @@ img
 	&--wrapper
 		display: grid
 		grid-template-columns: repeat(4, 1fr)
-		grid-auto-rows: minmax(100px, auto)
-		grid-gap: 40px 20px
+		grid-template-rows: auto
+		gap: 40px 20px
 	&--item
 		display: block
 		color: $dark
@@ -508,4 +508,9 @@ img
 	.block
 		&--title
 			margin-bottom: 10px
+
+.sale
+	&--button
+		margin-top: 30px
+
 @import "media" // Всегда в конце
