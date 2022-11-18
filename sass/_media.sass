@@ -54,6 +54,11 @@
 			margin-bottom: 20px
 		&--menu
 			text-align: right
+	.advantages
+		&--wrapper
+			&__item
+				img
+					max-width: 50%
 
 
 
@@ -96,6 +101,17 @@
 	.menu
 		&.menu--open
 			width: 80%
+	.advantages
+		&--wrapper
+			&__item
+				min-height: 300px
+				// flex-direction: column
+				// &:nth-child(2n)
+				// 	flex-direction: column
+				// img
+				// 	max-width: 100%
+				// .caption
+				// 	padding-top: 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -117,12 +133,18 @@
 	.advantages
 		&--wrapper
 			&__item
-				:nth-child(2n) 
+				flex-wrap: wrap
+				align-items: center
+				img
+					max-width: 100%
+					border-radius: 0
+				&:nth-child(2n) 
 					.caption
 						right: 0
 				&--overlay
-					.caption 
-						padding: 0 0 0 10px
+					.caption
+						// min-height: 300px
+						padding: 0
 						left: 0
 						.title
 							font-size: 16px
