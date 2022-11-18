@@ -133,17 +133,26 @@ body
 					display: flex
 					align-items: center
 					min-height: 34px
+					.contacts
+						text-align: right
+						display: flex
+						justify-content: end
+						align-items: center
+						gap: 20px
+						.footer--social__wrapper
+							margin-bottom: 0
+							display: flex
 					> div
 						line-height: normal
 						&:nth-child(3)
 							display: flex
 							align-items: center
 							justify-content: flex-end
-						&:nth-child(2)
-							text-align: right
 					.burger
 						a
 							height: 24px
+
+
 section, header
 	position: relative
 	background-size: cover
@@ -176,6 +185,7 @@ a
 	&:hover
 		text-decoration: none
 		color: rgba($dark, .7)
+
 img
 	max-width: 100%
 
@@ -212,7 +222,7 @@ img
 	text-align: center
 
 ::selection
-	background-color: $accent
+	background-color: rgba($dark, .7)
 	color: #fff
 
 .button
@@ -330,6 +340,9 @@ img
 		.fa
 			font-size: 28px
 
+.brands
+	text-align: center
+
 .advantages
 	&--title
 		margin-bottom: 40px
@@ -374,10 +387,10 @@ img
 					padding: 0 30px
 					position: absolute
 					text-align: left
-					transition: all .3s ease
+					transition: all .7s ease
 					.title
 						margin-bottom: 0
-			&:hover
+			&.active
 				img
 					transform: scale(1.2, 1.2) translate(15px, 15px)
 				.advantages--wrapper__item--overlay

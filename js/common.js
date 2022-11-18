@@ -28,6 +28,18 @@ $(function() {
 		handler(location.hash);
 	});
 
+	var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting) {
+        $(entry.target).addClass('active');
+      } else {
+        $(entry.target).removeClass('active');
+      }
+    });
+  }, {threshold: 1});
+  $('.advantages--wrapper__item').each(function(){
+    observer.observe(this);
+  });
 
 	let container = $(".menu");
 	let body = $(".menu--wrapper__external");
