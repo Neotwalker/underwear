@@ -56,6 +56,7 @@ $(function() {
 	$('.slider-1').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		draggable: false,
 		vertical: true,
 		verticalSwiping: true,
 		autoplay: true,
@@ -68,6 +69,7 @@ $(function() {
 	$('.slider-2').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		draggable: false,
 		vertical: true,
 		verticalSwiping: true,
 		autoplay: true,
@@ -80,6 +82,7 @@ $(function() {
 	$('.slider-3').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		draggable: false,
 		vertical: true,
 		verticalSwiping: true,
 		autoplay: true,
