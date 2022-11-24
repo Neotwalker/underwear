@@ -30,53 +30,56 @@
 
 <body class="ishome">
 	<header class="header" id="header">
-		<div class="header--top__line">
-			<div class="container">
-				<div class="row">
-					<div class="header--top__wrapper">
-						<div class="col-md-2 col-sm-2">
-							<a href="#" class="logo"><img src="img/logo.svg" alt="ваше лого"></a>
-						</div>
-						<div class="col-md-9 col-sm-9 col-xs-9 contacts">
-							<a href="tel:+79999999999" class="phone"><i class="fa fa-mobile"></i> +7 (999) 999-99-99</a>
-							<div class="footer--social__wrapper">
-								<a href="#"><i class="fa fa-telegram"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-vk"></i></a>
+		<div class="wrapper">
+			<div class="header--top__line">
+				<div class="container">
+					<div class="row">
+						<div class="header--top__wrapper">
+							<div class="col-md-5 col-sm-4 col-xs-8">
+								<a href="#" class="logo">Дисконт белья класса Premium</a>
+							</div>
+							<div class="col-md-9 col-sm-9 col-xs-4 contacts">
+								<a href="tel:+79999999999" class="phone hidden-xs"><i class="fa fa-mobile"></i> +7 (999) 999-99-99</a>
+								<div class="footer--social__wrapper">
+									<a href="#"><i class="fa fa-telegram"></i></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-2 burger">
+								<a href="#my-menu" class="hamburger hamburger--emphatic">
+									<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+								</a>
 							</div>
 						</div>
-						<div class="col-md-1 col-sm-1 burger">
-							<a href="#my-menu" class="hamburger hamburger--emphatic">
-								<span class="hamburger-box"><span class="hamburger-inner"></span></span>
-							</a>
+					</div>
+				</div>
+			</div>
+			<div class="brands">
+				<div class="container">
+					<div class="row">
+						<div class="brands--carousel owl-carousel col-md-12">
+							<img class="brands--image" src="img/brands/La-Perla.webp" alt="#">
+							<img class="brands--image" src="img/brands/chantelle.webp" alt="#">
+							<img class="brands--image" src="img/brands/logo.webp" alt="#">
+							<img class="brands--image" src="img/brands/lou.webp" alt="#">
+							<img class="brands--image" src="img/brands/PASSIONATA.webp" alt="#">
+							<img class="brands--image" src="img/brands/vannina-vesperini.webp" alt="#">
+	
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="header__carousel owl-carousel">
-			<a href="#" class="header__carousel--item" style="background-image: url('img/bg-1.jpg');">
-				<div class="header__wrapper">
-					<h1 class="h1 header__title">Glamour Couture</h1>
-					<p class="header__text">Цена: 
-						<strong class="old">20000 <i class="fa fa-ruble"></i></strong>
-						<span>15000<i class="fa fa-ruble"></i></span></p>
-				</div>
-			</a>
-			<a href="#" class="header__carousel--item" style="background-image: url('img/bg-2.jpg');">
-				<div class="header__wrapper">
-					<h1 class="header__title">Glamour Couture</h1>
-					<p class="header__text">Цена: 
-						<strong class="old">20000 <i class="fa fa-ruble"></i></strong>
-						<span>15000<i class="fa fa-ruble"></i></span></p>
-				</div>
-			</a>
+		<div class="header__video">
+			<div class="video--container">
+				<video class="video" frameborder="0" src="img/LiseCharmel-video.mp4" autoplay="true" muted="true" data-element="video" loop=""></video>
+			</div>
 		</div>
 	</header>
 	<div class="menu--wrapper__external">
 		<nav id="my-menu" class="menu">
 			<div class="menu--wrapper">
-				<img src="img/logo.svg" alt="#">
+				<p>Дисконт белья класса Premium</p>
 				<div class="menu--close">
 					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
 						<path d="M32.9831 32.8717L1.51685 2.25757" stroke="black" stroke-width="4"/>
@@ -86,28 +89,17 @@
 			</div>
 
 			<ul>
-				<li><a href="#header">Главная</a></li>
-				<li><a href="#advantages">Преимущества</a></li>
-				<li><a href="#video">Видео</a></li>
-				<li><a href="#clothes">Каталог</a></li>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="buy.html">Покупка сертификатов</a></li>
+				<li><a href="sale.html">Акции</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
 	</div>
 	<main class="main">
-		<!-- <section class="brands">
+		<section class="advantages">
 			<div class="container">
 				<div class="row">
-					<img class="col-md-12" src="img/lenta.webp" alt="">
-				</div>
-			</div>
-		</section> -->
-		<section class="advantages" id="advantages">
-			<div class="container">
-				<div class="row">
-					<div class="advantages--title">
-						<h2 class="h2">Преимущества</h2>
-						<p class="advantages--subitile">Далеко-далеко за словесными горами в стране.</p>
-					</div>
 					<div class="advantages--wrapper">
 						<div class="advantages--wrapper__item col-md-12">
 							<img src="img/adv-2.jpg" alt="#">
@@ -192,101 +184,75 @@
 				</div>
 			</div>
 		</section>
-		<section class="video" id="video">
+		<section class="underwear">
 			<div class="container">
 				<div class="row">
-					<div class="video--title">
+					<div class="underwear--title col-md-12">
 						<h2 class="h2">2022 Swim Collection</h2>
-						<p class="video--subitile">This summer, more than ever, our swim Collection celebrates freedom
+						<p class="underwear--subitile">This summer, more than ever, our swim Collection celebrates freedom
 							of movement and explores every audacity. Discover our Lookbook, high in style and colour inspired
 							by the joy of reinventing oneself.</p>
 					</div>
-						<div class="video--container">
-							<video class="video" frameborder="0" src="img/LiseCharmel-video.mp4" autoplay="true" muted="true" data-element="video" loop=""></video>
+					<div class="underwear--sliders col-md-12">
+						<div class="underwear--slider slider-1">
+							<img src="img/bg-1.jpg" alt="#">
+							<img src="img/bg-2.jpg" alt="#">
 						</div>
+						<div class="underwear--slider slider-2">
+							<img src="img/bg-2.jpg" alt="#">
+							<img src="img/bg-1.jpg" alt="#">
+						</div>
+						<div class="underwear--slider slider-3">
+							<img src="img/bg-1.jpg" alt="#">
+							<img src="img/bg-2.jpg" alt="#">
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="clothes" id="clothes">
 			<div class="container">
 				<div class="row">
-					<div class="clothes--title">
+					<div class="clothes--title col-md-12">
 						<h2 class="h2">Наше белье</h2>
 						<p class="clothes--subtitle">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 					</div>
-					<div class="clothes--wrapper owl-carousel">
-						<a href="#" class="clothes--item">
+					<div class="clothes--wrapper col-md-12">
+						<div class="clothes--item">
 							<div class="clothes--image">
-								<img class="image" src="img/adv-1.jpg" alt="#">
+								<img class="image" src="img/bg-1.jpg" alt="#">
 								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
+									<h3 class="title">
+										Осталась последняя дефицитная джинсовая рубашка Ann Andelman в размере S
+									</h3>
+									<p>И меланжевые бюстгальтеры La Perla - одна из самых хитовых кэжуал-моделей бренда - в размерах 70С, 75D, 80B, 80C</p>
+									<div class="price">
+										<span>Рубашка - 9990₽ <span class="old">10990₽</span> </span>
+										<span>Бра - 4990₽</span>
+									</div>
 								</div>
 							</div>
-						</a>
-						<a href="#" class="clothes--item">
+							<a href="#" class="button">Перейти в телеграм</a>
+						</div>
+						<div class="clothes--item">
 							<div class="clothes--image">
-								<img class="image" src="img/adv-2.jpg" alt="#">
+								<img class="image" src="img/bg-1.jpg" alt="#">
 								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
+									<h3 class="title">
+										Комплект для буднего дня, чтобы сделать его максимально уютным.
+									</h3>
+									<p>
+										Приятные к телу классические джемпера из мягкой полушерсти (50% шерсть, 10% кашемир, 40% вискоза) различных оттенков - 4990₽ в Дисконте<br>
+										Базовые гладкие бюстгальтеры, идеальные для ношения с трикотажем. 
+									</p>
+									<div class="price">
+										<span>Молочный LA PERLA - 5990₽ <span class="old">6990₽</span> </span>
+										<span>Нюдовый PASSIONATA - 2990₽</span>
+									</div>
 								</div>
 							</div>
-						</a>
-						<a href="#" class="clothes--item">
-							<div class="clothes--image">
-								<img class="image" src="img/adv-3.jpg" alt="#">
-								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="clothes--item">
-							<div class="clothes--image">
-								<img class="image" src="img/adv-1.jpg" alt="#">
-								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="clothes--item">
-							<div class="clothes--image">
-								<img class="image" src="img/adv-3.jpg" alt="#">
-								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="clothes--item">
-							<div class="clothes--image">
-								<img class="image" src="img/adv-1.jpg" alt="#">
-								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="clothes--item">
-							<div class="clothes--image">
-								<img class="image" src="img/adv-2.jpg" alt="#">
-								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="clothes--item">
-							<div class="clothes--image">
-								<img class="image" src="img/adv-3.jpg" alt="#">
-								<div class="text">
-									<span class="date">01 декабря 2020</span>
-									<p>Далеко-далеко за словесными горами в стране.</p>
-								</div>
-							</div>
-						</a>
+							<a href="#" class="button">Перейти в телеграм</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -311,7 +277,7 @@
 		<div class="container">
 			<div class="row footer--row">
 				<div class="col-md-4 col-sm-12 footer--social">
-					<a href="#" class="logo"><img src="img/logo.svg" alt="ваше лого"></a>
+					<p href="#" class="logo">Дисконт белья класса Premium</p>
 					<span class="text">Оставайтесь на связи</span>
 					<div class="footer--social__wrapper">
 						<a href="#"><i class="fa fa-telegram"></i></a>
@@ -320,14 +286,14 @@
 					</div>
 					<span> © 2022 «Дисконт белья класса Premium» </span>
 				</div>
-				<div class="col-md-2 col-sm-6 hidden-xs">
+				<div class="col-md-4	 col-sm-6 hidden-xs">
 					<nav class="footer--menu">
 						<h4 class="h4 block--title">Меню</h4>
 						<ul class="list">
-							<li><a href="#header">Главная</a></li>
-							<li><a href="#advantages">Преимущества</a></li>
-							<li><a href="#video">Видео</a></li>
-							<li><a href="#clothes">Каталог</a></li>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="buy.html">Покупка сертификатов</a></li>
+							<li><a href="sale.html">Акции</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>

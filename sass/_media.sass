@@ -11,15 +11,18 @@
 	.advantages
 		&--title
 			text-align: center
-	.video
+	.underwear
 		&--title
 			text-align: center
+		&--slider
+			margin-right: 0
+			margin-bottom: 30px
+			max-width: 100%
 	.clothes
 		&--title
 			text-align: center
 		&--wrapper
-			position: relative
-			padding-top: 40px
+			grid-template-columns: 1fr
 			.owl-nav
 				display: flex
 				justify-content: center
@@ -67,7 +70,9 @@
 		&--wrapper
 			&__item
 				img
-					max-width: 50%
+					max-width: 60%
+				&--overlay 
+					max-width: 40%
 
 
 
@@ -97,16 +102,10 @@
 	.advantages
 		&--wrapper
 			&__item
-				&:nth-child(2n)
-					.caption
-						right: 10%
+				img
+					max-width: 50%
 				&--overlay 
-					.caption
-						left: 10%
-						.title
-							font-size: 30px
-						.text
-							font-size: 16px
+					max-width: 50%
 	.menu
 		&.menu--open
 			width: 80%
@@ -115,13 +114,6 @@
 			&__item
 				min-height: 300px
 				gap: 40px
-				// flex-direction: column
-				// &:nth-child(2n)
-				// 	flex-direction: column
-				// img
-				// 	max-width: 100%
-				// .caption
-				// 	padding-top: 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -149,21 +141,14 @@
 			&__item
 				flex-wrap: wrap
 				align-items: center
+				gap: 20px
 				img
 					max-width: 100%
 					border-radius: 0
-				&:nth-child(2n) 
+				&--overlay 
+					max-width: 100%
 					.caption
-						right: 0
-				&--overlay
-					.caption
-						// min-height: 300px
-						padding: 0
-						left: 0
-						.title
-							font-size: 16px
-						.text
-							font-size: 12px
+						padding-top: 0
 
 @media only screen and (max-width : 460px)
 	.header

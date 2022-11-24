@@ -1,45 +1,5 @@
 $(function() {
 
-	$(document).on('click', 'nav a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 130
-    }, 900);
-	});
-
-	function handler(event) {
-		let hash = typeof event === 'string' ? event : event.target.hash;
-		if (!hash){
-			return
-		}
-
-		let tag = $(hash);
-
-		if (tag.length) {
-			let offset = tag.offset().top - 130;
-			$('html, body').stop().animate({ scrollTop: offset
-			}, 500);
-		}
-	}
-
-	$('#my-menu a, .footer--menu a').on("click", handler);
-	$(function() {
-		handler(location.hash);
-	});
-
-	// let observer = new IntersectionObserver(function(entries){
-  //   entries.forEach(function(entry){
-  //     if(entry.isIntersecting) {
-  //       $(entry.target).addClass('active');
-  //     } else {
-  //       $(entry.target).removeClass('active');
-  //     }
-  //   });
-  // }, {threshold: 1});
-  // $('.advantages--wrapper__item').each(function(){
-  //   observer.observe(this);
-  // });
 
 	let container = $(".menu");
 	let body = $(".menu--wrapper__external");
@@ -68,21 +28,65 @@ $(function() {
 			body.removeClass("overlay");
     }
   });
-	$('.header__carousel').owlCarousel({
+	$('.brands--carousel').owlCarousel({
 		loop: true,
 		autoplay : true,
 		autoplayTimeout : 4000,
 		nav: false,
-		dots: true,
+		dots: false,
 		smartSpeed: 700,
 		responsiveClass: true,
 		responsive: {
 			0: {
 				items: 1
+			},
+			350: {
+				items: 2
+			},
+			768: {
+				items: 3
+			},
+			1000: {
+				items: 4
 			}
 		}
 	});
+	
+	$('.slider-1').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		cssEase: 'linear',
+		dots: false,
+		arrows: false
+	});
 
+	$('.slider-2').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		cssEase: 'linear',
+		dots: false,
+		arrows: false
+	});
+
+	$('.slider-3').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		cssEase: 'linear',
+		dots: false,
+		arrows: false
+	});
 
 	if ($(window).width() < 1200) {
 		$(".clothes--wrapper.owl-carousel").owlCarousel({
