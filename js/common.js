@@ -31,7 +31,7 @@ $(function() {
 	$('.brands--carousel').owlCarousel({
 		loop: true,
 		autoplay : true,
-		autoplayTimeout : 4000,
+		autoplayTimeout : 2000,
 		margin: 30,
 		nav: false,
 		dots: false,
