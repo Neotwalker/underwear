@@ -53,49 +53,26 @@ $(function() {
 		}
 	});
 	
-	$('.slider-1').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		draggable: false,
-		swipe: false,
-		vertical: true,
-		verticalSwiping: true,
-		autoplay: true,
+	$('.underwear--slider').owlCarousel({
 		loop: true,
-		autoplaySpeed: 4000,
-		cssEase: 'linear',
+		autoplay : true,
+		autoplayTimeout : 3000,
+		margin: 30,
+		nav: false,
 		dots: false,
-		arrows: false
-	});
-
-	$('.slider-2').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		draggable: false,
-		swipe: false,
-		vertical: true,
-		verticalSwiping: true,
-		autoplay: true,
-		loop: true,
-		autoplaySpeed: 4000,
-		cssEase: 'linear',
-		dots: false,
-		arrows: false
-	});
-
-	$('.slider-3').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		draggable: false,
-		swipe: false,
-		vertical: true,
-		verticalSwiping: true,
-		autoplay: true,
-		loop: true,
-		autoplaySpeed: 4000,
-		cssEase: 'linear',
-		dots: false,
-		arrows: false
+		smartSpeed: 700,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			350: {
+				items: 2
+			},
+			1000: {
+				items: 3
+			}
+		}
 	});
 
 	if ($(window).width() < 1200) {

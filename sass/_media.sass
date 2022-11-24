@@ -14,10 +14,6 @@
 	.underwear
 		&--title
 			text-align: center
-		&--slider
-			margin-right: 0
-			margin-bottom: 30px
-			max-width: 100%
 	.clothes
 		&--title
 			text-align: center
@@ -73,6 +69,8 @@
 					max-width: 60%
 				&--overlay 
 					max-width: 40%
+	.underwear--slider .slick-slide
+		height: auto
 
 
 
@@ -114,6 +112,9 @@
 			&__item
 				min-height: 300px
 				gap: 40px
+	.underwear
+		&--slider
+			max-width: 100%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -138,13 +139,14 @@
 			font-size: 26px
 	.advantages
 		&--wrapper
+			align-items: center
 			&__item
 				flex-wrap: wrap
 				align-items: center
 				gap: 20px
 				img
-					max-width: 100%
-					border-radius: 0
+					max-width: 65%
+					height: 200px
 				&--overlay 
 					max-width: 100%
 					.caption
@@ -156,6 +158,10 @@
 			&__wrapper
 				.phone
 					display: none
+	body
+		&.ishome 
+			.header
+				min-height: fit-content
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	.h2

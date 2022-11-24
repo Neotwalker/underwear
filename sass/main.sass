@@ -286,14 +286,11 @@ img
 .header
 	min-height: 100vh
 	.brands
-		margin: 15px 0
-		.owl-stage
-			display: flex
-			gap: 20px
 		&--image
-			height: 150px
+			height: 100px
 			object-fit: contain
 			object-position: center
+			padding: 15px 0
 		.old
 			text-decoration: line-through
 			font-size: 20px
@@ -375,21 +372,17 @@ img
 			object-fit: cover
 
 .underwear
-	&--sliders
-		display: block
 	&--slider
-		margin-right: 30px
-		max-width: calc(33% - 30px) 
-		&:last-child
-			margin-right: 0
-		&.slick-slider
-			display: inline-block
-		.slick-slide
-			overflow: hidden
-			img
-				object-position: center
-				object-fit: cover
-				min-width: 100%
+		width: 100%
+		.slick-track
+			display: flex
+			gap: 30px
+			justify-content: space-between
+		img
+			max-width: calc(33% - 30px)
+			object-position: center
+			object-fit: cover
+			min-width: 100%
 	&--title
 		margin-bottom: 30px
 
@@ -413,10 +406,9 @@ img
 		position: relative
 		img
 			min-height: 400px
-			max-height: 500px
+			max-height: 600px
 			width: 100%
 			object-fit: cover
-			object-position: top
 			transition: all .3s ease
 		.text
 			font-size: 16px
