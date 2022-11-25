@@ -8,15 +8,7 @@
 		&__carousel
 			&--item
 				min-height: 60vh
-	.advantages
-		&--title
-			text-align: center
-	.underwear
-		&--title
-			text-align: center
 	.clothes
-		&--title
-			text-align: center
 		&--wrapper
 			grid-template-columns: 1fr
 			.owl-nav
@@ -50,8 +42,6 @@
 	.telegram
 		&--wrapper
 			gap: 20px
-		&--text
-			text-align: center
 		.col-md-6
 			&:first-child
 				padding-left: 15px
@@ -115,11 +105,14 @@
 	.underwear
 		&--slider
 			max-width: 100%
+	.clothes
+		&--title
+			margin-bottom: 20px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	section
-		margin: 30px 0
+		margin: 40px 0
 	.h2
 		font-size: 30px
 	.header
@@ -139,18 +132,24 @@
 			font-size: 26px
 	.advantages
 		&--wrapper
-			align-items: center
 			&__item
-				flex-wrap: wrap
-				align-items: center
+				min-height: fit-content
 				gap: 20px
-				img
-					max-width: 65%
-					height: 200px
-				&--overlay 
-					max-width: 100%
+				&:nth-child(2n)
 					.caption
-						padding-top: 0
+						text-align: left
+				img
+					max-width: 50%
+					height: 150px
+				&--overlay 
+					max-width: 50%
+					.caption
+						padding-top: 20px
+						text-align: right
+						.title
+							font-size: 16px
+						.text
+							font-size: 12px
 
 @media only screen and (max-width : 460px)
 	.header
