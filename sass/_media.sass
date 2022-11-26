@@ -11,6 +11,7 @@
 	.clothes
 		&--wrapper
 			grid-template-columns: 1fr
+			grid-template-rows: auto
 			.owl-nav
 				display: flex
 				justify-content: center
@@ -114,7 +115,8 @@
 	section
 		margin: 40px 0
 	.h2
-		font-size: 30px
+		font-size: 24px
+		text-align: center
 	.header
 		&__carousel
 			&--item
@@ -153,8 +155,8 @@
 	.pulse-button
 		bottom: 20px
 		right: 20px
-		width: 40px
-		height: 40px
+		width: 65px
+		height: 65px
 		&:hover
 			.pulse-button__icon
 				opacity: 1
@@ -162,8 +164,6 @@
 				transform: scale(1.2)
 		&__icon
 			font-size: 20px
-		&__text
-			display: none
 
 @media only screen and (max-width : 460px)
 	.header
@@ -178,7 +178,7 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	.h2
-		font-size: 30px
+		font-size: 20px
 
 
 /*==========  Mobile First  ==========*/
