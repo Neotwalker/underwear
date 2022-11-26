@@ -137,21 +137,26 @@
 			&__item
 				min-height: fit-content
 				gap: 20px
+				flex-direction: column
+				margin-bottom: 40px
 				&:nth-child(2n)
+					flex-direction: column
 					.caption
 						text-align: left
+					img
+						margin-left: auto
 				img
-					max-width: 50%
-					height: 150px
+					max-width: 180px
+					height: 180px
 				&--overlay 
-					max-width: 50%
+					max-width: 100%
 					.caption
-						padding-top: 20px
+						padding-top: 0
 						text-align: right
 						.title
-							font-size: 16px
+							font-size: 24px
 						.text
-							font-size: 12px
+							font-size: 18px
 	.pulse-button
 		bottom: 20px
 		right: 20px
