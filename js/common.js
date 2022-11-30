@@ -33,7 +33,8 @@ $(function() {
 		responsiveClass: true,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				margin: 20
 			},
 			350: {
 				items: 2
@@ -58,7 +59,8 @@ $(function() {
 		responsiveClass: true,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				margin: 20
 			},
 			350: {
 				items: 2
@@ -80,7 +82,8 @@ $(function() {
 		responsiveClass: true,
 		responsive: {
 			0: {
-				items: 2
+				items: 2,
+				margin: 20
 			},
 			768: {
 				items: 2
