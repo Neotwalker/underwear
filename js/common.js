@@ -96,27 +96,6 @@ $(function() {
 		}
 	});
 
-	if ($(window).width() < 1200) {
-		$(".clothes--wrapper.owl-carousel").owlCarousel({
-			loop: true,
-			items: 1,
-			nav: true,
-			margin: 15,
-			navText: ['<img src="img/arrow-left.png">', '<img src="img/arrow-right.png">'],
-			responsive: {
-				0: {
-					items: 1
-				},
-				800: {
-					items: 2
-				},
-				1100: {
-					items: 3
-				}
-			}
-		});
-	}
-
 	let container_sale = $(".call--callback");
 	let body_sale = $(".call");
 	// $(document).mouseup(function (e) {
