@@ -34,10 +34,11 @@ $(function() {
 		responsive: {
 			0: {
 				items: 1,
-				margin: 20
+				margin: 15
 			},
 			350: {
-				items: 2
+				items: 2,
+				margin: 15
 			},
 			768: {
 				items: 3
@@ -60,10 +61,11 @@ $(function() {
 		responsive: {
 			0: {
 				items: 1,
-				margin: 20
+				margin: 15
 			},
 			350: {
-				items: 2
+				items: 2,
+				margin: 15
 			},
 			1000: {
 				items: 3
@@ -83,7 +85,7 @@ $(function() {
 		responsive: {
 			0: {
 				items: 2,
-				margin: 20
+				margin: 15
 			},
 			768: {
 				items: 2
@@ -99,7 +101,7 @@ $(function() {
 			loop: true,
 			items: 1,
 			nav: true,
-			margin: 20,
+			margin: 15,
 			navText: ['<img src="img/arrow-left.png">', '<img src="img/arrow-right.png">'],
 			responsive: {
 				0: {
